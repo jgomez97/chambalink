@@ -1,13 +1,125 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ChambaLink</title>
+  <title>ChambaLink – Conecta con confianza</title>
+  <style>
+    :root {
+      --naranja: #e67e22;
+      --naranja-suave: #f39c12;
+      --azul: #2980b9;
+      --azul-suave: #3498db;
+      --fondo: #fdfdfd;
+      --texto: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--fondo);
+      color: var(--texto);
+    }
+
+    header {
+      background-color: var(--naranja);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero img {
+      max-width: 150px;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--naranja-suave);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .download-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .download-buttons img {
+      height: 60px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #f0f0f0;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .download-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenido a ChambaLink</h1>
-  <p>Tu app de conexión entre clientes y contratistas en México.</p>
+  <header>
+    <div class="logo">ChambaLink</div>
+    <nav>
+      <a href="terminos.html">Términos</a>
+      <a href="privacidad.html">Privacidad</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="logo-placeholder.png" alt="Logo de ChambaLink" />
+    <h1>Conecta con confianza</h1>
+    <p>La app que une a contratistas y clientes en México</p>
+
+    <div class="download-buttons">
+      <a href="#"><img src="google-play-badge.png" alt="Descargar en Google Play"></a>
+      <a href="#"><img src="app-store-badge.png" alt="Descargar en App Store"></a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 ChambaLink. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
